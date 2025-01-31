@@ -1,7 +1,7 @@
 import useSWR from 'swr';
-import {Todo} from '../model/todos.ts';
-import ToDoList from './ToDoList.tsx';
-import axiosClient, {BASE_URL} from '../api/axios/axiosClient.ts';
+import {Todo} from '../../model/todos.ts';
+import ToDoList from '../presentation/ToDoList.tsx';
+import axiosClient, {BASE_URL} from '../../api/axios/axiosClient.ts';
 import { useQuery} from "@tanstack/react-query";
 
 const ToDoListRtkQuery = () => {
