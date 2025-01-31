@@ -2,14 +2,15 @@
 
 # Axios
 ## Global config
+- Easier to use different HTTP methods
+- Can retry requests -> with interceptors or axiosRetry
 - Set base URL
 - Set request timeout
 - Set request headers
 - Set request cookies
+- Set interceptors
+- Set XSRF cookie
 - Works in node.js
-- Can retry requests
-- Easier to use different HTTP methods
-- Interceptors
 
 ## Other
 - Throws error automatically on non 2XX
