@@ -6,6 +6,10 @@
 - Set request timeout
 - Set request headers
 - Set request cookies
+- Works in node.js
+- Can retry requests
+- Easier to use different HTTP methods
+- Interceptors
 
 ## Other
 - Throws error automatically on non 2XX
