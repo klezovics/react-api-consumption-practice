@@ -5,30 +5,41 @@
 - Set base URL
 - Set request timeout
 - Set request headers
+- Set request cookies
 
 ## Other
 - Throws error automatically on non 2XX
 
 
 # ReactQuery, RTK, SWR
+## Basics
 - No need to write data/loading/error useState/useEffect boilerplate
+- Automatic retry on failure
 - Caches data and avoids duplicate data fetch
+
+## Caching
+- Pagination support
+- Cache invalidation
+- Prefetch
+- Polling/Auto-refetch
+
+## 2+ queries
+- Parallel queries
 - Conditional queries
 - Dependent queries
 - Infinite scroll
-- Pagination support
-- Cache invalidation
+
+## Mutations
 - Mutations
 - Optimistic UI updates with rollback
-- Prefetch
-- Polling/Auto-refetch
+
+## Other
+- Error boundaries integration
+- Selectors for cached data
+- DevTools
 - Suspense support
 - Websockets/Subscriptions
-- Retries on failure
 - Background sync (when user goes back to window)
 - Hydration SSR/ISR support
-- DevTools
-- Parallel queries
-- Error boundaries integration
-- Garbage collection (automatic cache expiration)
-- Selectors for cached data
+
+
