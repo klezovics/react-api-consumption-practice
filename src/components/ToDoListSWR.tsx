@@ -8,6 +8,8 @@ const ToDoListSWR = () => {
 
     //C1: OK, SWR is an improvement, because it handles the loading, error, data states for you
     //No boilerplate. Gives you a more structured approach
+    //C2: Note, that we do not need a provider here !! The hook just works !
+    //C3: On the downside, for this we pay with not having global state and each component will refetch data
     const {data: todos, error, isLoading} = useSWR<Todo[]>(
         //C2: ARG1 -> define the ID of the query (used for caching)
         '/todos',
