@@ -6,7 +6,7 @@ import ToDoListFetchOrAxios from "./components/ToDoListFetchOrAxios.tsx";
 import ToDoListSWR from "./components/ToDoListSWR.tsx";
 import ToDoListRtkQuery from "./components/ToDoListRtkQuery.tsx";
 import {Provider} from "react-redux";
-import {store} from "./api/store.ts";
+import {store} from "./api/redux/store.ts";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
 const queryClient = new QueryClient()

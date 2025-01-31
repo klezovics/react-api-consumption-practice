@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Todo} from "../model/todos.ts";
 import ToDoList from "./ToDoList.tsx";
-import axiosClient, {BASE_URL} from "../api/axiosClient.ts";
+import axiosClient, {BASE_URL} from "../api/axios/axiosClient.ts";
 
 
 // Case 1: Using fetch API to fetch data

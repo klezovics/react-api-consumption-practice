@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { Todo } from '../model/todos.ts';
-import {BASE_URL} from "./axiosClient.ts";
+import { Todo } from '../../model/todos.ts';
+import {BASE_URL} from "../axios/axiosClient.ts";
 
 export const todoApiSlice = createApi({
     reducerPath: 'todoApi',
