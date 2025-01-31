@@ -8,6 +8,7 @@ import ToDoListRtkQuery from "./components/container/ToDoListRtkQuery.tsx";
 import {Provider} from "react-redux";
 import {store} from "./api/redux/store.ts";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import ToDoListReactQuery from "./components/container/ToDoListReactQuery.tsx";
 
 const queryClient = new QueryClient()
 
@@ -19,7 +20,9 @@ function App() {
                 <Provider store={store}>
                     {/*<ToDoListFetchOrAxios/>*/}
                     {/*<ToDoListSWR/>*/}
-                    <ToDoListRtkQuery/>
+                    {/*<ToDoListRtkQuery/>*/}
+                    <ToDoListReactQuery/>
+
                 </Provider>
             </QueryClientProvider>
         </>
