@@ -20,10 +20,7 @@ async function getTodosFetch() {
 // + can configure interceptors and headers to use
 // - need to import a dependency
 // - need to configure a client
-async function getTodosAxios() {
-    const response = await axiosClient.get<Todo[]>('/todos');
-    return response.data;
-}
+ const getTodosAxios = async () => (await axiosClient.get<Todo[]>('/todos')).data
 
 // Lesson 1: If you want to use fetch or axios, there is a lot of boilerplate
 // You need to know this react API consumption idiom with data/loading/error states
@@ -58,11 +55,7 @@ const ToDoListFetchOrAxios = () => {
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>{error}</p>;
 
-    return (
-        <div>
-            <ToDoList todos={todos} />
-        </div>
-    );
+    return <ToDoList todos={todos} />
 };
 
 export default ToDoListFetchOrAxios;
