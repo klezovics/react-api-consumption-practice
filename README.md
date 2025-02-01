@@ -1,18 +1,18 @@
 # Things to do think about during API consumption
 
-- How many APIs will I need to consume ?
-- What are their base URLs ?
-- How do I authenticate with each one ? Library, protocol.
-- Do they support HTTPS ? Do they enforce HTTPS ?
-- How can I break down my API consumption code into modules ?
-- How to obtain, store and read auth token ?
-- How to provide auth token to API consuming code ?
-- How is auth token transfered to server ?
-- For each API what are the main entities that it manages ? How are they connected ?
-- Which patterns can you spot in this or that API ?
+API consumption = GET auth token & USE auth token & Security
 
+GET:
+How do I obtain auth token ? Which protocol is used -> which library to use ?
+Which credentials need to be provided to get the auth token ?
+How do I store the auth token ?
+How do I ensure that credentials/auth token are safe in transit and at rest ?
 
-How do I ensure security aspects ?
+USE:
+Which BE API consumption libs will I use ?
+How do I provide credentials to BE servers ? Cookies, headers, etc ?
+
+SECURITY:
 - HTTPS
 - CORS
 - Credentials/AuthToken in transit and at rest
@@ -80,10 +80,10 @@ S: What is the auth token and how do I obtain and store it ?
 - Caches data and avoids duplicate data fetch
 
 ## Caching
-- Pagination support
 - Cache invalidation
-- Prefetch
 - Polling/Auto-refetch
+- Pagination support
+- Prefetch
 
 ## 2+ queries
 - Parallel queries -> Dynamic parallel queries
