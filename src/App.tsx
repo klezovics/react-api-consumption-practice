@@ -22,7 +22,6 @@ function App() {
                     {/*<ToDoListSWR/>*/}
                     {/*<ToDoListRtkQuery/>*/}
                     <ToDoListReactQuery/>
-
                 </Provider>
             </QueryClientProvider>
         </>
